@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="15" failures="1" name="fr.techad.edc.CucumberRunnerTest" time="197.345" errors="12" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\lejeune\git\edc-req\scenarios"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\lejeune\git\edc-req\scenarios"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\lejeune\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\dev\tools\apache-maven-3.5.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\dev\tools\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;."/>
+    <property name="maven.conf" value="C:\dev\tools\apache-maven-3.5.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\dev\tools\apache-maven-3.5.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\lejeune"/>
+    <property name="user.timezone" value="GMT+02:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="BROWSER" value="firefox"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="lejeune"/>
+    <property name="java.class.path" value="C:\dev\tools\apache-maven-3.5.3\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_171\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DBROWSER=firefox"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\dev\tools\apache-maven-3.5.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Create a Brick" name="As a contributor, i can not create a brick" time="11.293">
+    <error message="Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ✽.I click on Documentation(scenario/contributor/editor/createBrick.feature:11)
+</error>
+    <system-out>@tag
+Feature: Create a Brick
+  Roles can or not create bricks
+
+  @tag @tag1
+  Scenario: As a contributor, i can not create a brick                # scenario/contributor/editor/createBrick.feature:6
+FirefoxDriver: firefox on ANY (89805a40-cca7-4245-9429-2f6fa8e18f79)
+    Given I am on the login page                                      # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;cont1&quot; and  the password &quot;dreyfuss&quot; # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                    # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                 # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                     # CreateBrickStepsDef.i_click_on_Documentation()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ?.I click on Documentation(scenario/contributor/editor/createBrick.feature:11)
+
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;          # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And can not create a new brick                                    # CreateBrickStepsDef.can_not_create_a_new_brick()
+</system-out>
+    <system-err>1529072213892	geckodriver	INFO	geckodriver 0.20.1
+1529072213909	geckodriver	INFO	Listening on 127.0.0.1:26178
+1529072214623	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-profile&quot; &quot;C:\\Users\\lejeune\\AppData\\Local\\Temp\\rust_mozprofile.KXPdlnQNE8Rk&quot;
+1529072216499	Marionette	INFO	Listening on port 50401
+juin 15, 2018 4:16:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="Test upload img in the articles" name="as a contributor, i can not add/replace/delete img in the articles" time="11.219">
+    <error message="Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ✽.I click on Documentation(scenario/contributor/editor/editArticleImg.feature:28)
+</error>
+    <system-out>
+@tag
+Feature: Test upload img in the articles
+
+  @tag @tag1
+  Scenario: as a contributor, i can not add/replace/delete img in the articles # scenario/contributor/editor/editArticleImg.feature:23
+FirefoxDriver: firefox on ANY (89805a40-cca7-4245-9429-2f6fa8e18f79)
+    Given I am on the login page                                               # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;cont1&quot; and  the password &quot;dreyfuss&quot;          # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                             # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                          # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                              # CreateBrickStepsDef.i_click_on_Documentation()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ?.I click on Documentation(scenario/contributor/editor/editArticleImg.feature:28)
+
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;                   # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    When Go to Articles of the brick &quot;AZERT&quot;                                   # ImgTestStepsDef.go_to_articles_of_the_brick(String)
+    And I can not go to Images                                                 # ArticleImgStepsDef.i_can_not_go_to_images()
+</system-out>
+  </testcase>
+  <testcase classname="add articles" name="As a contributor, i can not add all articles" time="11.412">
+    <error message="Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ✽.I click on Documentation(scenario/contributor/editor/editBrickArticles.feature:29)
+</error>
+    <system-out>
+@tag
+Feature: add articles
+  add articles to the editor area and verify doubles and the order
+
+  @tag @tag1
+  Scenario: As a contributor, i can not add all articles              # scenario/contributor/editor/editBrickArticles.feature:24
+FirefoxDriver: firefox on ANY (89805a40-cca7-4245-9429-2f6fa8e18f79)
+    Given I am on the login page                                      # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;cont1&quot; and  the password &quot;dreyfuss&quot; # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                    # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                 # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                     # CreateBrickStepsDef.i_click_on_Documentation()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ?.I click on Documentation(scenario/contributor/editor/editBrickArticles.feature:29)
+
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;          # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And Go to articles of the brick &quot;AZERT&quot;                           # ArticlesStepsDef.go_to_parameters_of_the_brick(String)
+    Then can not add articles                                         # ArticlesStepsDef.can_not_add_articles()
+    And can not edit articles                                         # ArticlesStepsDef.can_not_edit_articles()
+</system-out>
+  </testcase>
+  <testcase classname="Edit Parameters" name="As a contributor, i can not edit the content of a brick" time="11.39">
+    <error message="Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ✽.I click on Documentation(scenario/contributor/editor/editBrickParameters.feature:28)
+</error>
+    <system-out>
+@tag
+Feature: Edit Parameters
+
+  @tag @tag1
+  Scenario: As a contributor, i can not edit the content of a brick                                      # scenario/contributor/editor/editBrickParameters.feature:23
+FirefoxDriver: firefox on ANY (89805a40-cca7-4245-9429-2f6fa8e18f79)
+    Given I am on the login page                                                                         # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;cont1&quot; and  the password &quot;dreyfuss&quot;                                    # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                                                       # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                                                    # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                                                        # CreateBrickStepsDef.i_click_on_Documentation()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ?.I click on Documentation(scenario/contributor/editor/editBrickParameters.feature:28)
+
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;                                             # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And Go to parameters of the brick &quot;AZERT&quot;                                                            # ImgTestStepsDef.go_to_parameters_of_the_brick(String)
+    Then can not edit the parameters page with the desciption &quot;TEST&quot; and main key &quot;AAA&quot; and subKey &quot;BBB&quot; # EditBrickStepsDef.can_not_edit_the_parameters_page(String,String,String)
+</system-out>
+  </testcase>
+  <testcase classname="Test upload ref img" name="As a contributor, i can not add/replace/delete an img" time="10.683">
+    <error message="Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ✽.I click on Documentation(scenario/contributor/editor/editBrickRefImg.feature:28)
+</error>
+    <system-out>
+@tag
+Feature: Test upload ref img
+
+  @tag @tag1
+  Scenario: As a contributor, i can not add/replace/delete an img                                      # scenario/contributor/editor/editBrickRefImg.feature:23
+FirefoxDriver: firefox on ANY (89805a40-cca7-4245-9429-2f6fa8e18f79)
+    Given I am on the login page                                                                       # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;cont1&quot; and  the password &quot;dreyfuss&quot;                                  # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                                                     # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                                                  # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                                                      # CreateBrickStepsDef.i_click_on_Documentation()
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: //i[@class=&apos;icon glyphicon glyphicon-edit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.KXPdlnQNE8Rk, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=17640.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 89805a40-cca7-4245-9429-2f6fa8e18f79
+*** Element info: {Using=xpath, value=//i[@class=&apos;icon glyphicon glyphicon-edit&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.editor.CreateBrickPage.clickDocumentationBtn(CreateBrickPage.java:34)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.i_click_on_Documentation(CreateBrickStepsDef.java:23)
+	at ?.I click on Documentation(scenario/contributor/editor/editBrickRefImg.feature:28)
+
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;                                           # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And Go to parameters of the brick &quot;AZERT&quot;                                                          # ImgTestStepsDef.go_to_parameters_of_the_brick(String)
+    And can not add a photo with the path &quot;C:\Users\lejeune\Pictures\Selenium.jpg&quot;                     # ImgTestStepsDef.can_not_add_a_photo_with_the_path(String)
+    Then can not replace by a photo with the path &quot;C:\Users\lejeune\Pictures\Logo-Oracle-Java-Sun.jpg&quot; # ImgTestStepsDef.can_not_replace_by_a_photo_with_the_path(String)
+    And can not delete it                                                                              # ImgTestStepsDef.can_not_delete_it()
+</system-out>
+  </testcase>
+  <testcase classname="Test Login EDC" name="Test login" time="12.807"/>
+  <testcase classname="Test Login EDC" name="The login failed" time="7.543">
+    <error message="Unable to locate element: *[name=&apos;username&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.LoginPage.setUsername(LoginPage.java:25)
+	at fr.techad.edc.steps.LoginStepsDef.iEnterTheUsernameAndThePassword(LoginStepsDef.java:32)
+	at ✽.I enter the username &quot;stmgr1&quot; and  the password &quot;stmgr2&quot;(scenario/login.feature:15)
+</error>
+    <system-out>
+  @tag
+  Scenario: The login failed                                      # scenario/login.feature:13
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                  # LoginStepsDef.i_am_on_the_login_page()
+    When I enter the username &quot;stmgr1&quot; and  the password &quot;stmgr2&quot; # LoginStepsDef.iEnterTheUsernameAndThePassword(String,String)
+      org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.LoginPage.setUsername(LoginPage.java:25)
+	at fr.techad.edc.steps.LoginStepsDef.iEnterTheUsernameAndThePassword(LoginStepsDef.java:32)
+	at ?.I enter the username &quot;stmgr1&quot; and  the password &quot;stmgr2&quot;(scenario/login.feature:15)
+
+    And I click on login                                          # LoginStepsDef.i_click_on_login()
+    Then LoginPage should be displayed                            # LoginStepsDef.loginpageShouldBeDisplayed()
+    And Finish                                                    # BrowserStepDef.finish()
+</system-out>
+    <system-err>1529072282145	geckodriver	INFO	geckodriver 0.20.1
+1529072282161	geckodriver	INFO	Listening on 127.0.0.1:23660
+1529072282681	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-profile&quot; &quot;C:\\Users\\lejeune\\AppData\\Local\\Temp\\rust_mozprofile.BGbp1zMRZPee&quot;
+1529072284521	Marionette	INFO	Listening on port 50593
+juin 15, 2018 4:18:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="Test CreationProduct" name="Create a product" time="11.261">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnMenu(ConfigMenuComp.java:62)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnProductManagement(ConfigMenuComp.java:82)
+	at fr.techad.edc.pages.config.products.CreationProductPage.clickOnProductManagement(CreationProductPage.java:28)
+	at fr.techad.edc.steps.config.CreateProductStepsDef.i_click_on_Product_management(CreateProductStepsDef.java:17)
+	at ✽.I click on Product management(scenario/storeHouseManager/config/createproduct.feature:9)
+</error>
+    <system-out>
+Feature: Test CreationProduct
+  The adminsitraor can create a product. 
+
+  Scenario: Create a product                                               # scenario/storeHouseManager/config/createproduct.feature:4
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                           # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;       # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                         # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                      # LoginStepsDef.homepage_should_be_displayed()
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    When I click on Product management                                     # CreateProductStepsDef.i_click_on_Product_management()
+      java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnMenu(ConfigMenuComp.java:62)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnProductManagement(ConfigMenuComp.java:82)
+	at fr.techad.edc.pages.config.products.CreationProductPage.clickOnProductManagement(CreationProductPage.java:28)
+	at fr.techad.edc.steps.config.CreateProductStepsDef.i_click_on_Product_management(CreateProductStepsDef.java:17)
+	at ?.I click on Product management(scenario/storeHouseManager/config/createproduct.feature:9)
+
+    And I add the user &quot;Sebastien LEJEUNE&quot; to the product &quot;EDC&quot; and verify # CreateProductStepsDef.i_add_the_user_to_the_product(String,String)
+</system-out>
+  </testcase>
+  <testcase classname="Test CreationContact" name="Create a user" time="11.244">
+    <error message="Index: 1, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnMenu(ConfigMenuComp.java:62)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnUserManagement(ConfigMenuComp.java:93)
+	at fr.techad.edc.pages.config.users.CreationContactPage.clickOnUserManagement(CreationContactPage.java:24)
+	at fr.techad.edc.steps.config.CreateUserSetpsDef.i_clik_on_User_Management(CreateUserSetpsDef.java:18)
+	at ✽.I click on User Management(scenario/storeHouseManager/config/createuser.feature:10)
+</error>
+    <system-out>
+Feature: Test CreationContact
+  The adminsitraor can create a user. So to .
+
+  Scenario: Create a user                                                                                                                 # scenario/storeHouseManager/config/createuser.feature:5
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                                                                                          # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;                                                                      # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                                                                                        # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                                                                                     # LoginStepsDef.homepage_should_be_displayed()
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    When I click on User Management                                                                                                       # CreateUserSetpsDef.i_clik_on_User_Management()
+      java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnMenu(ConfigMenuComp.java:62)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnUserManagement(ConfigMenuComp.java:93)
+	at fr.techad.edc.pages.config.users.CreationContactPage.clickOnUserManagement(CreationContactPage.java:24)
+	at fr.techad.edc.steps.config.CreateUserSetpsDef.i_clik_on_User_Management(CreateUserSetpsDef.java:18)
+	at ?.I click on User Management(scenario/storeHouseManager/config/createuser.feature:10)
+
+    And I enter the username &quot;sebastien&quot; and email &quot;LEJEUNE@gmail.com&quot; and the firstname &quot;Sebastien&quot; and the lastname &quot;LEJEUNE&quot;           # CreateUserSetpsDef.i_enter_the_username_and_email_and_the_firstname_and_the_lastname(String,String,String,String)
+    And I Click on create                                                                                                                 # CreateUserSetpsDef.i_Click_on_create()
+    And verify if username &quot;sebastien&quot; and email &quot;LEJEUNE@gmail.com&quot; and the firstname &quot;Sebastien&quot; and the lastname &quot;LEJEUNE&quot; are correct # CreateUserSetpsDef.verify_if_username_and_email_and_the_firstname_and_the_lastname_are_correct(String,String,String,String)
+    And Finish                                                                                                                            # BrowserStepDef.finish()
+</system-out>
+  </testcase>
+  <testcase classname="Test Strategies" name="test Strategies" time="11.284">
+    <error message="Index: 2, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnMenu(ConfigMenuComp.java:62)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnContentManagement(ConfigMenuComp.java:104)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnStrategies(ConfigMenuComp.java:115)
+	at fr.techad.edc.pages.config.strategies.StrategiesPage.clickOnStrategies(StrategiesPage.java:20)
+	at fr.techad.edc.steps.config.StrategiesSetpsDef.i_Click_on_strategies(StrategiesSetpsDef.java:16)
+	at ✽.I Click on strategies(scenario/storeHouseManager/config/strategies.feature:10)
+</error>
+    <system-out>
+Feature: Test Strategies
+  The adminsitraor can create/modify strategies. So to .
+
+  Scenario: test Strategies                                          # scenario/storeHouseManager/config/strategies.feature:5
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                     # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot; # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                   # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                # LoginStepsDef.homepage_should_be_displayed()
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    When I Click on strategies                                       # StrategiesSetpsDef.i_Click_on_strategies()
+      java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnMenu(ConfigMenuComp.java:62)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnContentManagement(ConfigMenuComp.java:104)
+	at fr.techad.edc.pages.config.ConfigMenuComp.clickOnStrategies(ConfigMenuComp.java:115)
+	at fr.techad.edc.pages.config.strategies.StrategiesPage.clickOnStrategies(StrategiesPage.java:20)
+	at fr.techad.edc.steps.config.StrategiesSetpsDef.i_Click_on_strategies(StrategiesSetpsDef.java:16)
+	at ?.I Click on strategies(scenario/storeHouseManager/config/strategies.feature:10)
+
+    And I select the version &quot;V2018&quot;                                 # StrategiesSetpsDef.i_select_the_version(String)
+</system-out>
+  </testcase>
+  <testcase classname="Create a Brick" name="As a storehouse Manager, i can create a brick" time="16.223">
+    <failure message="CAN&apos;T CREATE A BRICK" type="java.lang.AssertionError">java.lang.AssertionError: CAN&apos;T CREATE A BRICK
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.can_create_a_new_brick(CreateBrickStepsDef.java:51)
+	at ✽.can create a new brick(scenario/storeHouseManager/editor/createBrick.feature:13)
+</failure>
+    <system-out>
+@tag
+Feature: Create a Brick
+  Roles can or not create bricks
+
+  @tag @tag1
+  Scenario: As a storehouse Manager, i can create a brick            # scenario/storeHouseManager/editor/createBrick.feature:6
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                     # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot; # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                   # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                    # CreateBrickStepsDef.i_click_on_Documentation()
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;         # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And can create a new brick                                       # CreateBrickStepsDef.can_create_a_new_brick()
+      java.lang.AssertionError: CAN&apos;T CREATE A BRICK
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at fr.techad.edc.steps.editor.CreateBrickStepsDef.can_create_a_new_brick(CreateBrickStepsDef.java:51)
+	at ?.can create a new brick(scenario/storeHouseManager/editor/createBrick.feature:13)
+
+    And enter the title &quot;AZERT&quot; and choose the type &quot;Window&quot;         # CreateBrickStepsDef.enter_the_title_and_choose_the_type(String,String)
+</system-out>
+  </testcase>
+  <testcase classname="Test upload img in the articles" name="as a StoreHouse manager, i can be add/replace/delete img" time="21.21">
+    <error message="autoitx4java/AutoItX" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: autoitx4java/AutoItX
+	at fr.techad.edc.pages.editor.contributors.Images.uploadImg(Images.java:105)
+	at fr.techad.edc.steps.editor.ArticleImgStepsDef.i_upload_an_img_with_the_path(ArticleImgStepsDef.java:34)
+	at ✽.I upload an img with the path &quot;C:\Users\lejeune\Pictures\java2.png&quot;(scenario/storeHouseManager/editor/editArticleImg.feature:32)
+Caused by: java.lang.ClassNotFoundException: autoitx4java.AutoItX
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at fr.techad.edc.pages.editor.contributors.Images.uploadImg(Images.java:105)
+	at fr.techad.edc.steps.editor.ArticleImgStepsDef.i_upload_an_img_with_the_path(ArticleImgStepsDef.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:50)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:99)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:108)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>
+@tag
+Feature: Test upload img in the articles
+
+  @tag @tag1
+  Scenario: as a StoreHouse manager, i can be add/replace/delete img              # scenario/storeHouseManager/editor/editArticleImg.feature:23
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                                  # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;              # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+    And I wait the url page change                                                # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                             # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                                 # CreateBrickStepsDef.i_click_on_Documentation()
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;                      # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    When Go to Articles of the brick &quot;AZERT&quot;                                      # ImgTestStepsDef.go_to_articles_of_the_brick(String)
+    And I can go to Images                                                        # ArticleImgStepsDef.i_can_go_to_images()
+    Then I upload an img with the path &quot;C:\Users\lejeune\Pictures\java2.png&quot;      # ArticleImgStepsDef.i_upload_an_img_with_the_path(String)
+      java.lang.NoClassDefFoundError: autoitx4java/AutoItX
+	at fr.techad.edc.pages.editor.contributors.Images.uploadImg(Images.java:105)
+	at fr.techad.edc.steps.editor.ArticleImgStepsDef.i_upload_an_img_with_the_path(ArticleImgStepsDef.java:34)
+	at ?.I upload an img with the path &quot;C:\Users\lejeune\Pictures\java2.png&quot;(scenario/storeHouseManager/editor/editArticleImg.feature:32)
+Caused by: java.lang.ClassNotFoundException: autoitx4java.AutoItX
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at fr.techad.edc.pages.editor.contributors.Images.uploadImg(Images.java:105)
+	at fr.techad.edc.steps.editor.ArticleImgStepsDef.i_upload_an_img_with_the_path(ArticleImgStepsDef.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:50)
+	at cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:55)
+	at cucumber.runner.TestStep.run(TestStep.java:42)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)
+	at cucumber.runner.TestCase.run(TestCase.java:47)
+	at cucumber.runner.Runner.runPickle(Runner.java:44)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:99)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:108)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+    And add it to the content of the articles                                     # ArticleImgStepsDef.add_it_to_the_content_of_the_articles()
+    Then I replace by an img with the path &quot;C:\Users\lejeune\Pictures\javafx.png&quot; # ArticleImgStepsDef.i_replace_by_an_img_with_the_path(String)
+    And I delete it                                                               # ArticleImgStepsDef.i_delete_it()
+</system-out>
+  </testcase>
+  <testcase classname="add articles" name="As a storehouse manager, i can add all articles" time="38.629"/>
+  <testcase classname="Edit Parameters" name="As a storeHouse manager, i can add/replace/delete an img" time="5.584">
+    <error message=": 
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: : 
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:113)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.LoginPage.setUsername(LoginPage.java:25)
+	at fr.techad.edc.steps.LoginStepsDef.iEnterTheUsernameAndThePassword(LoginStepsDef.java:32)
+	at fr.techad.edc.steps.LoginStepsDef.i_log_with_the_username_and_the_password(LoginStepsDef.java:59)
+	at ✽.I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;(scenario/storeHouseManager/editor/editBrickParameters.feature:25)
+</error>
+    <system-out>
+@tag
+Feature: Edit Parameters
+
+  @tag @tag1
+  Scenario: As a storeHouse manager, i can add/replace/delete an img                                 # scenario/storeHouseManager/editor/editBrickParameters.feature:23
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                                                     # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;                                 # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+      org.openqa.selenium.UnhandledAlertException: : 
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:113)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.LoginPage.setUsername(LoginPage.java:25)
+	at fr.techad.edc.steps.LoginStepsDef.iEnterTheUsernameAndThePassword(LoginStepsDef.java:32)
+	at fr.techad.edc.steps.LoginStepsDef.i_log_with_the_username_and_the_password(LoginStepsDef.java:59)
+	at ?.I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;(scenario/storeHouseManager/editor/editBrickParameters.feature:25)
+
+    And I wait the url page change                                                                   # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                                                # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                                                    # CreateBrickStepsDef.i_click_on_Documentation()
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;                                         # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And Go to parameters of the brick &quot;AZERT&quot;                                                        # ImgTestStepsDef.go_to_parameters_of_the_brick(String)
+    Then can edit the parameters page with the desciption &quot;TEST&quot; and main key &quot;AAA&quot; and subKey &quot;BBB&quot; # EditBrickStepsDef.can_edit_the_parameters_page(String,String,String)
+</system-out>
+  </testcase>
+  <testcase classname="Test upload img ref" name="as a StoreHouse manager, i can be add/replace/delete img" time="5.563">
+    <error message=": 
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}" type="org.openqa.selenium.UnhandledAlertException">org.openqa.selenium.UnhandledAlertException: : 
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:113)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.LoginPage.setUsername(LoginPage.java:25)
+	at fr.techad.edc.steps.LoginStepsDef.iEnterTheUsernameAndThePassword(LoginStepsDef.java:32)
+	at fr.techad.edc.steps.LoginStepsDef.i_log_with_the_username_and_the_password(LoginStepsDef.java:59)
+	at ✽.I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;(scenario/storeHouseManager/editor/editBrickRefImg.feature:26)
+</error>
+    <system-out>
+@tag
+Feature: Test upload img ref
+
+  @tag @tag1
+  Scenario: as a StoreHouse manager, i can be add/replace/delete img                               # scenario/storeHouseManager/editor/editBrickRefImg.feature:24
+FirefoxDriver: firefox on ANY (c53297a3-a769-4e0f-8d9d-998793ca1923)
+    Given I am on the login page                                                                   # LoginStepsDef.i_am_on_the_login_page()
+    When I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;                               # LoginStepsDef.i_log_with_the_username_and_the_password(String,String)
+      org.openqa.selenium.UnhandledAlertException: : 
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;TAPC109&apos;, ip: &apos;172.20.16.109&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\lejeune\AppData\Local\Temp\rust_mozprofile.BGbp1zMRZPee, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=60.0.2, platformVersion=6.1, moz:processID=23004.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: c53297a3-a769-4e0f-8d9d-998793ca1923
+*** Element info: {Using=name, value=username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:113)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:485)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at fr.techad.edc.pages.LoginPage.setUsername(LoginPage.java:25)
+	at fr.techad.edc.steps.LoginStepsDef.iEnterTheUsernameAndThePassword(LoginStepsDef.java:32)
+	at fr.techad.edc.steps.LoginStepsDef.i_log_with_the_username_and_the_password(LoginStepsDef.java:59)
+	at ?.I log with the username &quot;stmgr1&quot; and  the password &quot;stmgr1&quot;(scenario/storeHouseManager/editor/editBrickRefImg.feature:26)
+
+    And I wait the url page change                                                                 # BrowserStepDef.iWaitTheUrlPageChange()
+    Then Homepage should be displayed                                                              # LoginStepsDef.homepage_should_be_displayed()
+    When I click on Documentation                                                                  # CreateBrickStepsDef.i_click_on_Documentation()
+    And select the product &quot;EDC&quot; and the version &quot;Version 1&quot;                                       # CreateBrickStepsDef.select_the_product_and_the_version(String,String)
+    And Go to parameters of the brick &quot;AZERT&quot;                                                      # ImgTestStepsDef.go_to_parameters_of_the_brick(String)
+    And can add a photo with the path &quot;C:\Users\lejeune\Pictures\Selenium.jpg&quot;                     # ImgTestStepsDef.can_add_a_photo_with_the_path(String)
+    Then can replace by a photo with the path &quot;C:\Users\lejeune\Pictures\Logo-Oracle-Java-Sun.jpg&quot; # ImgTestStepsDef.can_replace_by_a_photo_with_the_path(String)
+    And can delete it                                                                              # ImgTestStepsDef.can_delete_it()
+</system-out>
+  </testcase>
+</testsuite>
